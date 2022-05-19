@@ -12,11 +12,11 @@
 
 
     if (isset($_POST['username'])) {
-        $name = $_POST['username'];
+        $name = strip_tags($_POST['username']);
     }
 
     if (isset($_POST['age'])) {
-        $age = $_POST['age'];
+        $age = strip_tags($_POST['age']);
     }
 
     echo "Имя: $name<br> Возраст: $age";
